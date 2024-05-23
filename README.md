@@ -1,5 +1,5 @@
 Email: nizeyimanamaurice@gmail.com
-password: 222o12402
+password: 222012402
 
 Virtual Career Coaching Platform Documentation
 Table of Contents
