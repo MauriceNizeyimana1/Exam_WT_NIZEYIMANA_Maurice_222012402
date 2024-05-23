@@ -1,0 +1,77 @@
+  <style>
+    /* Additional CSS specific to this page */
+    /* Additional CSS specific to this page */
+body {
+  background-image: url('./Image/virtual.jpeg');
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: lightgreen;
+  padding: 50px;
+  display: flex; /* Use flexbox to align items */
+  justify-content: space-between; /* Align items to the left and right */
+  align-items: center; /* Center items vertically */
+}
+.navbar {
+  list-style-type: none;
+  padding: 0;
+  margin: 0px;
+  display: flex; /* Use flexbox to align items */
+  align-items: center; /* Center items vertically */
+}
+.navbar li {
+  display: inline;
+  margin-right: 130px;
+}
+.navbar li a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  background-color: blue;
+}
+.navbar li a:hover {
+  background-color: skyblue;
+}
+.search-form {
+  display: flex; /* Use flexbox to align items */
+  align-items: center; /* Center items vertically */
+}
+.search-input {
+  padding: 8px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: none;
+}
+.search-button {
+  padding: 8px 16px;
+  background-color: magenta;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.search-button:hover {
+  background-color: purple;
+}
+.section-heading {
+  color: darkred;
+  text-align: center;
+}
+.sub-heading {
+  color: red;
+  text-align: center;
+}
+.objectives-list {
+  color: blue;
+  margin-left: 50px;
+}
+footer {
+  background-color: lightgreen;
+  padding: 50px;
+  text-align: center;
+  color: white;
+}
+
+  </style>

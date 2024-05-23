@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- My Name is NIZEYIMANA Maurice, RegNo: 222012402-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        body {
+            background-color: lightgreen; 
+            font-family: Arial, sans-serif; 
+        }
+
+        center {
+            margin-top: 50px; 
+        }
+
+        h2 {
+            color: blue; 
+        }
+
+        label {
+            display: block; 
+            margin-bottom: 5px; 
+            color: #666; 
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 250px; 
+            padding: 10px; 
+            margin-bottom: 15px; 
+            border: 1px solid #ccc; 
+            border-radius: 5px; 
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); 
+            transition: border-color 0.3s, box-shadow 0.3s; 
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="password"]:focus {
+            border-color: #4CAF50; 
+            box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+            outline: none; 
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px 20px;
+            background-color: #4CAF50; 
+            color: white; 
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer;
+            margin: 5px; 
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #45a049; 
+        }
+
+        /* Added frame styling */
+        .frame {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div class="frame">
+            <h2>Registration Form</h2>
+            <form action="register.php" method="post">
+                <label for="fname">Firstname:</label>
+                <input type="text" id="fname" name="fname" placeholder="Enter your firstname" required><br>
+
+                <label for="lname">Lastname:</label>
+                <input type="text" id="lname" name="lname" placeholder="Enter your lastname" required><br>
+
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required><br>
+               
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+
+                <label for="telephone">Telephone:</label>
+                <input type="text" id="telephone" name="telephone" placeholder="Enter your telephone" required><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required><br>
+
+                <label for="activation_code">Activation Code:</label>
+                <input type="text" id="activation_code" name="activation_code" placeholder="Enter activation code" required><br>
+
+                <input type="submit" name="register" value="Register">
+                <input type="reset" name="cancel" value="Cancel">
+            </form>
+        </div>
+    </center>
+</body>
+</html>

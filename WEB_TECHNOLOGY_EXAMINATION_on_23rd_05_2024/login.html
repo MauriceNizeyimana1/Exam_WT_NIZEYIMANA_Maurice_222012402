@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .form-container {
+            background-color: #fff;
+            width: 500px; /* Expanded width */
+            max-width: 90%;
+            margin: 50px auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            border-radius: 10px 10px 0 0;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            width: calc(100% - 20px); /* Adjusted width */
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .button-container {
+            overflow: hidden; /* Added to clear floats */
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            width: 48%;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            float: left;
+            margin-right: 4%; 
+        }
+
+        input[type="reset"] {
+            float: right;
+            margin-right: 0; 
+        }
+
+        .signup-link {
+            font-size: 16px;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .signup-link a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .signup-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <!-- Login Form Header -->
+        <h2>Login Form</h2>
+        <!-- Login Form -->
+        <form action="login.php" method="post">
+            <!-- Email Input -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            <!-- Password Input -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <!-- Forgot Password Link -->
+            <p style="font-size: 16px; margin-bottom: 20px;"><a href="resetpassword.html">Forgot Password</a></p>
+
+            <!-- Login and Cancel Buttons -->
+            <div class="button-container">
+                <input type="submit" value="Login">
+                <input type="reset" value="Cancel">
+            </div><br><br>
+
+            <!-- New Account Link -->
+            <p class="signup-link">Don't you have an account? <a href="register.html">Create New Account</a></p>
+
+        </form>
+
+    </div>
+</body>
+
+</html>
