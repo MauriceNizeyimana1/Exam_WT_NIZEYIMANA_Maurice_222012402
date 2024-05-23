@@ -1,3 +1,11 @@
+DATABASE DETAILS.
+
+$host = "localhost";
+$user = "Maurice";
+$pass = "222012402";
+$database = "virtual_career_coaching"
+
+THE EMAIL AND PASSWORD THAT I'M USING FOR LOGIN TO OUR PROJECT.
 Email: nizeyimanamaurice@gmail.com
 password: 222012402
 
